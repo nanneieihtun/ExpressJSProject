@@ -4,10 +4,10 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const dbConnection = mysql.createConnection({
-  host: process.env.VPI_DB_HOST,
-  user: process.env.VPI_DB_USERNAME,
-  password: process.env.VPI_DB_PASSWORD,
-  database: process.env.VPI_DB_NAME,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 dbConnection.connect((err) => {
