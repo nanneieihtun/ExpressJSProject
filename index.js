@@ -7,8 +7,8 @@ const dotenv = require("dotenv");
 const csvRouter = require("./import/import.router");
 dotenv.config();
 
-const PORT = process.env.VPI_APP_PORT || 5000;
-const HOST = process.env.VPI_APP_HOST || "localhost";
+const PORT = process.env.APP_PORT || 5000;
+const HOST = process.env.APP_HOST || "localhost";
 
 app.use(cors());
 app.use(express.json());
